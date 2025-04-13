@@ -12,5 +12,3 @@ doc = BeautifulSoup(newegg_Page, "html.parser")
 
 page_Text = doc.find(class_="list-tool-pagination-text").strong.text
 print(page_Text)
-max_Pages = re.compile("[^/]+$")
-print(max_Pages)
